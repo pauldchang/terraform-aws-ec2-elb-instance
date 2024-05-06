@@ -15,7 +15,7 @@ resource "aws_instance" "terraform6" {
 # Create a new load balancer
 resource "aws_elb" "terraform6" {
   name               = "paul-terraform6-elb"
-  availability_zones = ["us-west-2a", "us-west-2b", "us-west-2c"]
+  availability_zones = ["us-east-2a", "us-east-2b", "us-east-2c"]
 
   access_logs {
     bucket        = "terraform6"
